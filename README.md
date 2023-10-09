@@ -1,4 +1,4 @@
-AD_HOC INSIGHTS CONSUMER GOODS
+AD_HOC INSIGHTS CONSUMER GOODS Sql challenge project
 
 This project is part of Codebasics Resume Project Challenge.
                   
