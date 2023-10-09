@@ -186,17 +186,3 @@ SELECT *
 FROM ranked_product 
 WHERE rank_order in (1,2,3)
 ;
-
-
--- Extra Insights
--- Number of products that were discontinued in year 2021 from 2020.
-
-SELECT DISTINCT product_code, product,segment, fiscal_year  
-FROM fact_sales_monthly as fm
-JOIN dim_product as dp 
-USING (product_code)
-WHERE product_code NOT IN (SELECT DISTINCT product_code 
-							FROM fact_sales_monthly 
-                            WHERE fiscal_year=2021) 
-and fiscal_year = 2020
-;
